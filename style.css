@@ -1,0 +1,108 @@
+:root {
+  --color-surf: #08fdd8;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-surf: #08fdd8;
+  --color-surf-hover: #019e86;
+  --color-main: #17181c;
+  --color-pink: #e31b6d;
+  --color-text: #5255ff;
+  --color-light: #edeef7;
+  --color-select: #b700ff;
+
+  --font-family: 'PT Serif', serif;
+  --regular-font: 400 2rem / 140% var(--font-family);
+  --regular-mid-font: 400 2.2rem / 140% var(--font-family);
+  --bold-font: 700 3rem / 140% var(--font-family);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  background-color: var(--color-main);
+  color: var(--color-surf);
+  height: 100vh;
+}
+
+.currency {
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  max-width: 45rem;
+  background-color: var(--color-main);
+}
+
+.currency__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font: var(--bold-font);
+  text-align: center;
+}
+
+.currency__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.currency__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.currency__select,
+.currency__input {
+  margin-right: 1rem;
+  padding-left: 0 1rem;
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+  height: 5rem;
+  width: 95%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.currency__select {
+  color: var(--color-white);
+  background-color: var(--color-select);
+  font: var(--regular-font);
+}
+.currency__input {
+  background: var(--color-light);
+  font: var(--regular-mid-font);
+  color: var(--color-text);
+  /* padding-left: 1rem; */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 1.2rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  font: var(--regular-font);
+  transition: color 0.3s ease-in-out, background 0.3s linear, box-shadow 500ms linear;
+  border: 1px solid var(--color-surf);
+  color: var(--color-surf);
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px var(--color-surf), 0 0 12px var(--color-surf-hover);
+  color: var(--color-white);
+  background: linear-gradient(117deg, rgba(8, 253, 216, 1) 0%, rgb(0, 199, 169) 100%);
+}
